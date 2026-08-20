@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Início — OuviLer</title>
+<meta name="description" content="Plataforma web de inclusão escolar, com acessibilidade real e funcional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="spark-icon" viewBox="0 0 24 24">
+      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+    </symbol>
+  </defs>
+</svg>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div class="intro-loader" id="introLoader" aria-hidden="true">
+  <span class="intro-mark"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>OuviLer</span>
+</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="topbar">
+  <div class="wrap bar">
+    <a href="index.html" class="brand"><span class="mk"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg></span>OuviLer</a>
+    <button class="navtoggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path class="bar bar1" d="M3 7h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar2" d="M3 12h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar3" d="M3 17h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html" aria-current="page">Início</a>
+      <a href="missao.html">Missão</a>
+      <a href="acessibilidade.html">Acessibilidade</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+<div class="cb-banner" id="cbBanner" role="status" aria-live="polite">🎨 <span id="cbBannerText">Modo de cor ativo</span></div>
+<div class="epilepsy-banner" id="epilepsyBanner" role="status" aria-live="polite">⚠️ <span id="epilepsyBannerText">Modo epilepsia ativo</span></div>
+<main id="main">
+  <section class="hero" id="top" data-narrate="Início">
+    <div class="wrap">
+      <span class="tag-label"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>TCC 2027 · Programação para Internet · ETEC</span>
+      <h1>Inclusão começa <span class="hl">na escola</span>.</h1>
+      <p class="lede">O OuviLer nasce de uma convicção simples: nenhuma criança, professor ou funcionário deveria ficar de fora do ambiente escolar por causa de uma barreira que a tecnologia já sabe resolver. Este site reúne por que a inclusão importa — socialmente, digitalmente, na escola e além dela — e demonstra, na prática, recursos de acessibilidade funcionando de verdade.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" id="heroListen">🔊 Ouvir esta página</button>
+        <a href="missao.html" class="btn btn-ghost">Ir para o conteúdo</a>
+      </div>
+    </div>
+    <div class="hero-imgwrap">
+      <div class="frame">
+        <img src="img/kids-computer.jpg" alt="Duas crianças sentadas lado a lado usando computadores em uma sala de aula, digitando no teclado com atenção.">
+        <div class="tint"></div>
+        <div class="cap">Inclusão digital começa cedo: acesso igualitário à tecnologia dentro da própria sala de aula.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mapa" data-narrate="Como o site está organizado">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Como navegar</span>
+        <h2>Seis páginas, um só assunto</h2>
+        <p>Cada página aprofunda um ângulo diferente da inclusão. Todas compartilham a mesma barra de acessibilidade funcional, no canto inferior direito.</p>
+      </div>
+      <div class="nav-grid">
+        <a class="nav-card" href="missao.html"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg><h3>Missão</h3><p>Por que a inclusão importa — na sociedade, na escola, no trabalho e por que o tema está tão em pauta agora.</p><span class="go">Ler a missão →</span></a>
+        <a class="nav-card" href="acessibilidade.html"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg><h3>Acessibilidade</h3><p>Os conceitos por trás da inclusão digital e os recursos de acessibilidade ativos, funcionando de verdade neste site.</p><span class="go">Ver recursos →</span></a>
+        <a class="nav-card" href="tecnologia.html"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg><h3>Tecnologia</h3><p>A arquitetura técnica do projeto: stack, multiplataforma e cronograma de desenvolvimento.</p><span class="go">Ver tecnologia →</span></a>
+        <a class="nav-card" href="equipe.html"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg><h3>Equipe</h3><p>Os sete integrantes por trás do projeto e a função de cada um.</p><span class="go">Ver equipe →</span></a>
+        <a class="nav-card" href="contato.html"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg><h3>Contato</h3><p>Canal de contato da equipe para dúvidas, sugestões e propostas de colaboração.</p><span class="go">Ver contato →</span></a>
+        <a class="nav-card" href="missao.html#preconceito"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg><h3>Preconceito e desigualdade</h3><p>Como a inclusão combate capacitismo, estereótipos e desigualdade de oportunidades.</p><span class="go">Entender melhor →</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span class="fb"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>OuviLer</span>
+    <span class="fm">TCC 2027 · Programação para Internet · ETEC</span>
+  </div>
+</footer>
+<!-- TOASTS -->
+<div class="toast-wrap" id="toastWrap" role="status" aria-live="polite"></div>
+
+<!-- VOLTAR AO TOPO -->
+<button class="totop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<!-- BARRA DE ACESSIBILIDADE -->
+<div class="a11y-bar">
+  <button class="a11y-fab" id="a11yFab" aria-label="Abrir painel de acessibilidade" aria-expanded="false">♿</button>
+  <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Painel de acessibilidade">
+    <button class="a11y-close" id="a11yClose" aria-label="Fechar painel">✕</button>
+    <h2>Acessibilidade</h2>
+    <p class="sub">Ajustes reais, aplicados agora nesta página.</p>
+
+    <button class="a11y-listen" id="a11yListen">🔊 Ouvir esta página (IA de leitura)</button>
+
+    <div class="a11y-group">
+      <span class="lbl">Tamanho do texto</span>
+      <div class="a11y-row">
+        <button id="fontDec" aria-label="Diminuir fonte">A−</button>
+        <button id="fontReset" aria-label="Fonte padrão">A</button>
+        <button id="fontInc" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Contraste</span>
+      <div class="a11y-row">
+        <button data-toggle="high-contrast">Alto contraste</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Epilepsia / fotossensibilidade</span>
+      <div class="a11y-row">
+        <button id="epilepsyToggle" class="epilepsy-btn">Modo seguro (muda tudo)</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Paletas para os 7 tipos de daltonismo</span>
+      <div class="a11y-row" id="cbRow">
+        <button data-cb="none" class="active">Padrão</button>
+        <button data-cb="cb-protanopia">Protanopia</button>
+        <button data-cb="cb-protanomalia">Protanomalia</button>
+        <button data-cb="cb-deuteranopia">Deuteranopia</button>
+        <button data-cb="cb-deuteranomalia">Deuteranomalia</button>
+        <button data-cb="cb-tritanopia">Tritanopia</button>
+        <button data-cb="cb-tritanomalia">Tritanomalia</button>
+        <button data-cb="cb-acromatopsia">Acromatopsia</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Navegação e foco</span>
+      <div class="a11y-row">
+        <button data-toggle="link-highlight">Destacar links</button>
+        <button data-toggle="big-click">Cliques maiores</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Leitura</span>
+      <div class="a11y-row">
+        <button data-toggle="dyslexia-mode">Fonte p/ dislexia</button>
+        <button data-toggle="reduce-motion">Reduzir movimento</button>
+      </div>
+    </div>
+
+    <button class="a11y-reset" id="a11yReset">Restaurar tudo</button>
+  </div>
+</div>
+
+<!-- BARRA DO NARRADOR -->
+<div class="narrator-bar" id="narratorBar">
+  <div class="nb-progress" id="nbProgress"></div>
+  <button id="nbPlayPause" aria-label="Pausar leitura">⏸</button>
+  <div class="nb-info">
+    <div class="nb-label">Ouvindo esta página</div>
+    <div class="nb-text" id="nbText">Início</div>
+  </div>
+  <button id="nbStop" aria-label="Parar leitura">✕</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

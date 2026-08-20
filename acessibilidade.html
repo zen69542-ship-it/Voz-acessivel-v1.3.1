@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acessibilidade — OuviLer</title>
+<meta name="description" content="Conceitos de acessibilidade e recursos reais ativos no site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="spark-icon" viewBox="0 0 24 24">
+      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+    </symbol>
+  </defs>
+</svg>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div class="intro-loader" id="introLoader" aria-hidden="true">
+  <span class="intro-mark"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>OuviLer</span>
+</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="topbar">
+  <div class="wrap bar">
+    <a href="index.html" class="brand"><span class="mk"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg></span>OuviLer</a>
+    <button class="navtoggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path class="bar bar1" d="M3 7h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar2" d="M3 12h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar3" d="M3 17h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html">Início</a>
+      <a href="missao.html">Missão</a>
+      <a href="acessibilidade.html" aria-current="page">Acessibilidade</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+<div class="cb-banner" id="cbBanner" role="status" aria-live="polite">🎨 <span id="cbBannerText">Modo de cor ativo</span></div>
+<div class="epilepsy-banner" id="epilepsyBanner" role="status" aria-live="polite">⚠️ <span id="epilepsyBannerText">Modo epilepsia ativo</span></div>
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>Acessibilidade não é um botão no canto da tela</h1>
+      <p>Os conceitos, a central de acessibilidade e os recursos que este site realmente usa — não uma lista descritiva, a própria ferramenta em funcionamento.</p>
+    </div>
+  </div>
+
+  <section id="conceitos" data-narrate="Inclusão não é apenas acessibilidade">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Termos que não são sinônimos</span>
+        <h2>Inclusão não é apenas acessibilidade</h2>
+        <p>É comum usar essas palavras como se fossem a mesma coisa. Não são — e a diferença importa na hora de avaliar se um ambiente (escolar, digital ou de trabalho) é realmente inclusivo.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card"><h3>Acessibilidade</h3><p style="font-size:14px; color:var(--ink-soft);">A remoção de barreiras concretas — uma rampa, um leitor de tela, uma legenda. É o meio.</p></div>
+        <div class="cat-card"><h3>Inclusão</h3><p style="font-size:14px; color:var(--ink-soft);">O processo de garantir participação plena e real, não só a presença. É o objetivo.</p></div>
+        <div class="cat-card"><h3>Equidade</h3><p style="font-size:14px; color:var(--ink-soft);">Oferecer a cada pessoa o que ela precisa para ter a mesma oportunidade — não necessariamente a mesma coisa.</p></div>
+        <div class="cat-card"><h3>Usabilidade</h3><p style="font-size:14px; color:var(--ink-soft);">O quão fácil é usar algo, para qualquer pessoa. Acessibilidade é usabilidade estendida a quem usa tecnologia assistiva.</p></div>
+        <div class="cat-card"><h3>Design universal</h3><p style="font-size:14px; color:var(--ink-soft);">Projetar para o maior número possível de pessoas desde o início, em vez de criar uma versão "adaptada" depois.</p></div>
+        <div class="cat-card"><h3>Pertencimento</h3><p style="font-size:14px; color:var(--ink-soft);">A sensação de poder participar sem esconder quem se é. É o teste real de que a inclusão funcionou.</p></div>
+      </div>
+      <div class="quote-block">
+        <p>Existe uma diferença entre "ajudar alguém" e "garantir que alguém tenha condições de participar". A primeira é um gesto pontual; a segunda é uma responsabilidade estrutural.</p>
+        <span>Por que inclusão não deveria ser tratada como favor</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="nao-e-so-botao" style="background:var(--surface);" data-narrate="Por que um widget de acessibilidade não é suficiente">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Uma crítica necessária</span>
+        <h2>Por que um botão de acessibilidade sozinho não resolve</h2>
+        <p>É cada vez mais comum ver sites com um ícone flutuante de "acessibilidade" no canto da tela. Esses widgets ajudam, mas não substituem um site construído de forma acessível desde a base — porque um widget de terceiros não corrige a estrutura do HTML por trás dele.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card"><h3>HTML semântico</h3><p style="font-size:14px; color:var(--ink-soft);">Usar &lt;button&gt;, &lt;nav&gt;, &lt;h1&gt;-&lt;h2&gt; corretamente — não &lt;div&gt; genérica para tudo.</p></div>
+        <div class="cat-card"><h3>Hierarquia de títulos</h3><p style="font-size:14px; color:var(--ink-soft);">Um leitor de tela navega pela estrutura de títulos; pular níveis quebra essa navegação.</p></div>
+        <div class="cat-card"><h3>Labels em formulários</h3><p style="font-size:14px; color:var(--ink-soft);">Todo campo precisa de um &lt;label&gt; associado — sem isso, quem usa leitor de tela não sabe o que preencher.</p></div>
+        <div class="cat-card"><h3>Texto alternativo</h3><p style="font-size:14px; color:var(--ink-soft);">Toda imagem com informação relevante precisa de um alt descritivo, não genérico.</p></div>
+        <div class="cat-card"><h3>Foco visível</h3><p style="font-size:14px; color:var(--ink-soft);">Quem navega por teclado precisa ver, a cada Tab, exatamente onde está.</p></div>
+        <div class="cat-card"><h3>Contraste no CSS</h3><p style="font-size:14px; color:var(--ink-soft);">Nenhum widget conserta um texto cinza claro sobre fundo branco definido no código-fonte.</p></div>
+      </div>
+      <p style="color:var(--ink-soft); font-size:15px; margin-top:20px; max-width:70ch;">Por isso a barra de acessibilidade deste site é um complemento — o trabalho de base (semântica, contraste, navegação por teclado) já está na estrutura de cada página, não depende do painel para existir.</p>
+    </div>
+  </section>
+
+  <section id="recursos" data-narrate="Recursos de acessibilidade ativos neste site">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Não é só teoria</span>
+        <h2>Recursos de acessibilidade ativos neste site</h2>
+        <p>Toque no botão preto no canto inferior direito da tela. Ele abre um painel real e funcional — não é uma lista descritiva, é a própria ferramenta.</p>
+      </div>
+      <div class="demo-box">
+        <div class="di">♿</div>
+        <p><strong>Experimente agora</strong>Clique no botão de acessibilidade e teste: aumentar a fonte, ativar alto contraste, ativar o modo seguro para epilepsia e fotossensibilidade (muda imagens e cores da página inteira), trocar a paleta para os sete tipos de daltonismo, ouvir esta página em voz alta e ativar a fonte facilitada para dislexia.</p>
+      </div>
+
+      <div class="section-head" style="margin-top:56px;">
+        <span class="eyebrow">Cobertura completa</span>
+        <h2>Perfis contemplados pelo projeto</h2>
+        <p>Perfis diferentes podem precisar de combinações diferentes de recursos — por isso os ajustes são independentes entre si, e podem ser ativados em qualquer combinação.</p>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card"><h3>Cegueira</h3><div class="tags"><span class="tag">Leitura em voz alta</span><span class="tag">Leitor de tela</span><span class="tag">Navegação por teclado</span></div></div>
+        <div class="cat-card"><h3>Baixa visão</h3><div class="tags"><span class="tag">Fonte ampliável</span><span class="tag">Alto contraste</span></div></div>
+        <div class="cat-card"><h3>Daltonismo (7 tipos)</h3><div class="tags"><span class="tag">Protanopia</span><span class="tag">Protanomalia</span><span class="tag">Deuteranopia</span><span class="tag">Deuteranomalia</span><span class="tag">Tritanopia</span><span class="tag">Tritanomalia</span><span class="tag">Acromatopsia</span></div></div>
+        <div class="cat-card"><h3>Epilepsia / fotossensibilidade</h3><div class="tags"><span class="tag">Zero animação</span><span class="tag">Imagens dessaturadas</span><span class="tag">Cores neutralizadas</span></div></div>
+        <div class="cat-card"><h3>Surdez</h3><div class="tags"><span class="tag">Conteúdo textual completo</span><span class="tag">Sem dependência de áudio</span></div></div>
+        <div class="cat-card"><h3>Deficiência motora</h3><div class="tags"><span class="tag">Navegação por teclado</span><span class="tag">Cliques maiores</span></div></div>
+        <div class="cat-card"><h3>Dificuldades cognitivas</h3><div class="tags"><span class="tag">Interface simples</span><span class="tag">Linguagem clara</span></div></div>
+        <div class="cat-card"><h3>Dislexia</h3><div class="tags"><span class="tag">Fonte facilitada</span><span class="tag">Texto para voz</span></div></div>
+        <div class="cat-card"><h3>Autismo / sensorial</h3><div class="tags"><span class="tag">Baixo estímulo</span><span class="tag">Sem animação</span></div></div>
+      </div>
+
+      <figure style="margin-top:56px; max-width:420px;">
+        <div class="frame" style="aspect-ratio:1/1; border:1px solid var(--line);"><img src="img/diversidade-wheel.png" alt="Diagrama circular com o texto central 'Inclusão, Diversidade, Igualdade', dividido em setores: origem raça e etnia, família e gerações, gênero, LGBTI+ e simpatizantes, pessoas com deficiência, e as ações seja aberto, pergunte, respeite, aprecie, aprenda e ouça." style="filter:none;"></div>
+        <figcaption class="credit-note">Diagrama de referência sobre os pilares de diversidade e inclusão, usado como material de apoio conceitual pelo grupo.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span class="fb"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>OuviLer</span>
+    <span class="fm">TCC 2027 · Programação para Internet · ETEC</span>
+  </div>
+</footer>
+<!-- TOASTS -->
+<div class="toast-wrap" id="toastWrap" role="status" aria-live="polite"></div>
+
+<!-- VOLTAR AO TOPO -->
+<button class="totop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<!-- BARRA DE ACESSIBILIDADE -->
+<div class="a11y-bar">
+  <button class="a11y-fab" id="a11yFab" aria-label="Abrir painel de acessibilidade" aria-expanded="false">♿</button>
+  <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Painel de acessibilidade">
+    <button class="a11y-close" id="a11yClose" aria-label="Fechar painel">✕</button>
+    <h2>Acessibilidade</h2>
+    <p class="sub">Ajustes reais, aplicados agora nesta página.</p>
+
+    <button class="a11y-listen" id="a11yListen">🔊 Ouvir esta página (IA de leitura)</button>
+
+    <div class="a11y-group">
+      <span class="lbl">Tamanho do texto</span>
+      <div class="a11y-row">
+        <button id="fontDec" aria-label="Diminuir fonte">A−</button>
+        <button id="fontReset" aria-label="Fonte padrão">A</button>
+        <button id="fontInc" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Contraste</span>
+      <div class="a11y-row">
+        <button data-toggle="high-contrast">Alto contraste</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Epilepsia / fotossensibilidade</span>
+      <div class="a11y-row">
+        <button id="epilepsyToggle" class="epilepsy-btn">Modo seguro (muda tudo)</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Paletas para os 7 tipos de daltonismo</span>
+      <div class="a11y-row" id="cbRow">
+        <button data-cb="none" class="active">Padrão</button>
+        <button data-cb="cb-protanopia">Protanopia</button>
+        <button data-cb="cb-protanomalia">Protanomalia</button>
+        <button data-cb="cb-deuteranopia">Deuteranopia</button>
+        <button data-cb="cb-deuteranomalia">Deuteranomalia</button>
+        <button data-cb="cb-tritanopia">Tritanopia</button>
+        <button data-cb="cb-tritanomalia">Tritanomalia</button>
+        <button data-cb="cb-acromatopsia">Acromatopsia</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Navegação e foco</span>
+      <div class="a11y-row">
+        <button data-toggle="link-highlight">Destacar links</button>
+        <button data-toggle="big-click">Cliques maiores</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Leitura</span>
+      <div class="a11y-row">
+        <button data-toggle="dyslexia-mode">Fonte p/ dislexia</button>
+        <button data-toggle="reduce-motion">Reduzir movimento</button>
+      </div>
+    </div>
+
+    <button class="a11y-reset" id="a11yReset">Restaurar tudo</button>
+  </div>
+</div>
+
+<!-- BARRA DO NARRADOR -->
+<div class="narrator-bar" id="narratorBar">
+  <div class="nb-progress" id="nbProgress"></div>
+  <button id="nbPlayPause" aria-label="Pausar leitura">⏸</button>
+  <div class="nb-info">
+    <div class="nb-label">Ouvindo esta página</div>
+    <div class="nb-text" id="nbText">Início</div>
+  </div>
+  <button id="nbStop" aria-label="Parar leitura">✕</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

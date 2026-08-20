@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tecnologia — OuviLer</title>
+<meta name="description" content="A arquitetura técnica do projeto OuviLer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="spark-icon" viewBox="0 0 24 24">
+      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+    </symbol>
+  </defs>
+</svg>
+<a href="#main" class="skip-link">Pular para o conteúdo</a>
+<div class="intro-loader" id="introLoader" aria-hidden="true">
+  <span class="intro-mark"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>OuviLer</span>
+</div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<header class="topbar">
+  <div class="wrap bar">
+    <a href="index.html" class="brand"><span class="mk"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg></span>OuviLer</a>
+    <button class="navtoggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path class="bar bar1" d="M3 7h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar2" d="M3 12h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+        <path class="bar bar3" d="M3 17h18" stroke="#14171F" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <nav class="navlinks" id="navLinks">
+      <a href="index.html">Início</a>
+      <a href="missao.html">Missão</a>
+      <a href="acessibilidade.html">Acessibilidade</a>
+      <a href="tecnologia.html" aria-current="page">Tecnologia</a>
+      <a href="equipe.html">Equipe</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+</header>
+<div class="cb-banner" id="cbBanner" role="status" aria-live="polite">🎨 <span id="cbBannerText">Modo de cor ativo</span></div>
+<div class="epilepsy-banner" id="epilepsyBanner" role="status" aria-live="polite">⚠️ <span id="epilepsyBannerText">Modo epilepsia ativo</span></div>
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1>A arquitetura por trás do OuviLer</h1>
+      <p>Stack técnica, alcance multiplataforma e o cronograma de desenvolvimento até a feira tecnológica.</p>
+    </div>
+  </div>
+
+  <section data-narrate="Stack tecnológica">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Sob o capô</span>
+        <h2>Stack tecnológica</h2>
+      </div>
+      <div class="stack-grid">
+        <div class="stack-card"><span class="tag2">Front-end</span><h4>Interface</h4><ul><li>HTML5 semântico</li><li>CSS3 responsivo</li><li>JavaScript vanilla</li></ul></div>
+        <div class="stack-card"><span class="tag2">Back-end</span><h4>API</h4><ul><li>Node.js / Express</li><li>API REST</li><li>Autenticação</li></ul></div>
+        <div class="stack-card"><span class="tag2">Dados</span><h4>Banco de dados</h4><ul><li>PostgreSQL</li><li>Modelagem ER</li><li>Escopo: TCC 2027</li></ul></div>
+        <div class="stack-card"><span class="tag2">Voz</span><h4>Texto em fala</h4><ul><li>Web Speech API</li><li>Leitura por seção</li><li>Controle de velocidade</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--surface);" data-narrate="Multiplataforma por design">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Alcance</span>
+        <h2>Multiplataforma por design</h2>
+        <p>Em vez de um aplicativo separado para cada sistema, o OuviLer é uma aplicação web responsiva: um único código-fonte que se adapta ao tamanho de tela, ao tipo de entrada (toque, mouse ou teclado) e à capacidade do dispositivo, sem exigir instalação ou loja de aplicativos.</p>
+      </div>
+      <div class="stat-row">
+        <div class="stat-box"><h4>Celular</h4><p>Layout de coluna única, botões grandes o bastante para toque.</p></div>
+        <div class="stat-box"><h4>Tablet e notebook</h4><p>Aproveitamento do espaço extra, navegação completa por teclado.</p></div>
+        <div class="stat-box"><h4>Computador</h4><p>Interface em tela cheia, ideal para uso prolongado em sala de aula.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section data-narrate="Cronograma de desenvolvimento">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Metodologia</span>
+        <h2>Cronograma até a feira</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><span class="when">Meses 1–2</span><h4>Definição e requisitos</h4><p>Tema oficial, levantamento de requisitos e wireframes.</p></div>
+        <div class="tl-item"><span class="when">Meses 3–4</span><h4>Modelagem</h4><p>Banco de dados e estrutura da API.</p></div>
+        <div class="tl-item"><span class="when">Meses 5–7</span><h4>Desenvolvimento</h4><p>Front-end e back-end em paralelo.</p></div>
+        <div class="tl-item"><span class="when">Mês 8</span><h4>Integração de voz</h4><p>Conexão do serviço de conversão texto-fala.</p></div>
+        <div class="tl-item"><span class="when">Mês 9</span><h4>Testes de acessibilidade</h4><p>Validação com leitores de tela e ajustes finais.</p></div>
+        <div class="tl-item"><span class="when">Meses 10–12</span><h4>Documentação e apresentação</h4><p>Redação do TCC, ensaios e feira tecnológica.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span class="fb"><svg class="spark" viewBox="0 0 24 24"><use href="#spark-icon" xlink:href="#spark-icon"></use></svg>OuviLer</span>
+    <span class="fm">TCC 2027 · Programação para Internet · ETEC</span>
+  </div>
+</footer>
+<!-- TOASTS -->
+<div class="toast-wrap" id="toastWrap" role="status" aria-live="polite"></div>
+
+<!-- VOLTAR AO TOPO -->
+<button class="totop" id="toTop" aria-label="Voltar ao topo">↑</button>
+
+<!-- BARRA DE ACESSIBILIDADE -->
+<div class="a11y-bar">
+  <button class="a11y-fab" id="a11yFab" aria-label="Abrir painel de acessibilidade" aria-expanded="false">♿</button>
+  <div class="a11y-panel" id="a11yPanel" role="dialog" aria-label="Painel de acessibilidade">
+    <button class="a11y-close" id="a11yClose" aria-label="Fechar painel">✕</button>
+    <h2>Acessibilidade</h2>
+    <p class="sub">Ajustes reais, aplicados agora nesta página.</p>
+
+    <button class="a11y-listen" id="a11yListen">🔊 Ouvir esta página (IA de leitura)</button>
+
+    <div class="a11y-group">
+      <span class="lbl">Tamanho do texto</span>
+      <div class="a11y-row">
+        <button id="fontDec" aria-label="Diminuir fonte">A−</button>
+        <button id="fontReset" aria-label="Fonte padrão">A</button>
+        <button id="fontInc" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Contraste</span>
+      <div class="a11y-row">
+        <button data-toggle="high-contrast">Alto contraste</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Epilepsia / fotossensibilidade</span>
+      <div class="a11y-row">
+        <button id="epilepsyToggle" class="epilepsy-btn">Modo seguro (muda tudo)</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Paletas para os 7 tipos de daltonismo</span>
+      <div class="a11y-row" id="cbRow">
+        <button data-cb="none" class="active">Padrão</button>
+        <button data-cb="cb-protanopia">Protanopia</button>
+        <button data-cb="cb-protanomalia">Protanomalia</button>
+        <button data-cb="cb-deuteranopia">Deuteranopia</button>
+        <button data-cb="cb-deuteranomalia">Deuteranomalia</button>
+        <button data-cb="cb-tritanopia">Tritanopia</button>
+        <button data-cb="cb-tritanomalia">Tritanomalia</button>
+        <button data-cb="cb-acromatopsia">Acromatopsia</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Navegação e foco</span>
+      <div class="a11y-row">
+        <button data-toggle="link-highlight">Destacar links</button>
+        <button data-toggle="big-click">Cliques maiores</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <span class="lbl">Leitura</span>
+      <div class="a11y-row">
+        <button data-toggle="dyslexia-mode">Fonte p/ dislexia</button>
+        <button data-toggle="reduce-motion">Reduzir movimento</button>
+      </div>
+    </div>
+
+    <button class="a11y-reset" id="a11yReset">Restaurar tudo</button>
+  </div>
+</div>
+
+<!-- BARRA DO NARRADOR -->
+<div class="narrator-bar" id="narratorBar">
+  <div class="nb-progress" id="nbProgress"></div>
+  <button id="nbPlayPause" aria-label="Pausar leitura">⏸</button>
+  <div class="nb-info">
+    <div class="nb-label">Ouvindo esta página</div>
+    <div class="nb-text" id="nbText">Início</div>
+  </div>
+  <button id="nbStop" aria-label="Parar leitura">✕</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
